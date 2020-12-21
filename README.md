@@ -34,8 +34,9 @@ Vous êtes à présent de en mesure d'utiliser notre modèle.
 # Le programme 
 
 Ouvrir le programme et le lancer en veillant à sélectionner votre environnement virtuel comme interpreteur. 
+Une fenêtre va s'ouvrir.
 
 # Conclusion 
-
+On peut dire que nos résultats en termes d'analyse temporelle corresponde à nos attendes. La littérature nous également permis de déterminer les valeurs des paramètres dans le système de Lotka Volterra afin de modéliser l'évolution des populations de sardines et de requins dans la mer Adriatique. Plus de détail dans notre rapport PDF. 
 # Références 
 
