@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {I}Introduction}{3}{section.0.1}%
+\contentsline {subsection}{\numberline {I.1}blabla}{3}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {I.2}blabla}{3}{subsection.0.1.2}%
+\contentsline {section}{\numberline {II}Modélisation à état continu}{3}{section.0.2}%
+\contentsline {subsection}{\numberline {II.1}blabla}{3}{subsection.0.2.1}%
+\contentsline {section}{\numberline {III}Modélisation à événements discrets}{3}{section.0.3}%
+\contentsline {subsection}{\numberline {III.1}blabla}{3}{subsection.0.3.1}%
+\contentsfinish 
