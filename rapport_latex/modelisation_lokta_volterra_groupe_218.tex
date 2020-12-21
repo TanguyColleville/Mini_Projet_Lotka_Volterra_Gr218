@@ -1,0 +1,127 @@
+\documentclass[a4paper, 11pt]{report}% autres choix : book, report
+\usepackage[utf8]{inputenc}% gestion des accents (source)
+\usepackage[T1]{fontenc}% gestion des accents (PDF)
+\usepackage[francais]{babel}% gestion du français
+
+\usepackage{textcomp}% caractères additionnels
+\usepackage{mathtools,amssymb,amsthm}% packages de l'AMS + mathtools
+\usepackage{lmodern}% police de caractère
+\usepackage{geometry}% gestion des marges
+\usepackage{graphicx}% gestion des images
+\usepackage{xcolor}% gestion des couleurs
+\usepackage{array}% gestion améliorée des tableaux
+\usepackage{calc}% syntaxe naurelle pour les calculs
+\usepackage{titlesec}% pour les sections
+\usepackage{titletoc}% pour la table des matières
+\usepackage{fancyhdr}% pour les en-têtes
+\usepackage{titling}% pour le titre
+\usepackage{enumitem}% pour les listes numérotées
+\usepackage[hyphens]{url} % Pour des césures correctes dansles URLs
+\usepackage[pdfauthor = {{MB TC AP}}, pdftitle = {{Modelisation Lokta Volterra}}, pdfstartview = Fit, pdfpagelayout = SinglePage , pdfnewwindow = true, bookmarksnumbered = true, breaklinks, colorlinks, linkcolor = black, urlcolor = black, citecolor = cyan, linktoc = all]{hyperref}
+\usepackage{titlesec}
+
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}% font of number
+  {\thechapter~ -}% format of number
+  {20pt}% space between number and title
+  {\Huge}% font of title
+  
+% Taille des marges
+\geometry{hmargin=2.8cm,vmargin=2.8cm}
+
+% RAZ des numéros de section après un chapitre
+\makeatletter\@addtoreset{section}{chapter}\makeatother
+% Pour mettre des I, II, etc. aux parties
+\renewcommand{\thepart}{\Roman{part}}
+% Pour mettre des 1, 2, etc. aux chapitres
+\renewcommand{\thechapter}{\Roman{chapter}}
+% Idem pour les sections et avoir le numéro de chapitre
+\renewcommand{\thesection}{\Roman{section}}
+% Idem pour les sous-sections et avoir le numéro de chapitre
+\renewcommand{\thesubsection}{\Roman{section}.\arabic{subsection}}
+
+\titlecontents{section}%
+	[1.5em]% retrait à gauche
+	{\addvspace{1em plus 0pt}\bfseries}% matériel avantcommun aux entrées numérotées ou pas
+	{\contentslabel{2em}}% avant lorsqu'il y a un numéro
+	{\hspace{-1.3em}}% avant lorsqu'il n'y a pas de numéro
+	{\hfill\contentspage}% points de suspension et no page
+	[\addvspace{0pt}]% matériel après
+	
+	\dottedcontents{subsection}%
+	[3em]% retrait gauche
+	{\addvspace{0pt}}% matériel avant
+	{1.5em}% espacement de contentslabel
+	{0.75em}% espace entre les . . . .
+    [\addvspace{0pt}]% matériel après
+
+    \dottedcontents{subsubsection}%
+	[4.5em]% retrait gauche
+	{\addvspace{0pt}}% matériel avant
+	{1.5em}% espacement de contentslabel
+	{0.75em}% espace entre les . . . .
+    [\addvspace{0pt}]% matériel après
+
+% En-tête, pied de page
+\pagestyle{fancy}
+\fancyhead[O]{Mini-Pojet \\Lokta Volterra}
+\fancyhead[R]{Modélisation ST2}
+\fancyhead[L]{\includegraphics[height=1cm]{images/cs.png}}
+
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{Matthieu BRIET \\Tanguy COLLEVILLE \\ Antoine PAGNEUX}
+\fancyfoot[L]{Groupe 218}
+    
+
+\begin{document}
+    % Page de Garde
+    \begin{titlepage}
+        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+        \begin{center}
+            % En-têtes
+            \textsc{\LARGE{} Mini-Projet Modélisation} \\[0.5cm] 
+            \textsc{\Large{} CentraleSupélec - 1A} \\[0.5cm]
+            \textsc{\large{} Groupe 218} \\[0.5cm] 
+            % Titre
+            \HRule \\[0.6cm]
+            {\huge\bfseries{} Lokta Volterra} \\[0.25cm]
+            \HRule \\[1.5cm]
+            % Date
+            {\large\today} \\[2cm] 
+            % Logo CS
+            \includegraphics[width=8cm]{images/cs.png}
+            \\[2cm] 
+        \end{center}
+        \vfill{}
+        % Auteurs
+        \begin{minipage}{0.45\linewidth}
+            \begin{flushleft}
+                \Large\textit{Auteurs :} \\
+                Matthieu \textsc{BRIET} \\
+                Tanguy \textsc{COLLEVILLE} \\
+                Antoine \textsc{PAGNEUX} 
+            \end{flushleft}
+        \end{minipage}
+    \end{titlepage}
+
+    % Table des matières
+    \tableofcontents
+    % Table des figures
+    \listoffigures
+    % Table des tableaux
+    %\listoftables
+
+    \newpage
+    \section{Introduction}
+        \subsection{blabla}
+        \subsection{blabla}
+
+    \section{Modélisation à état continu}
+        \subsection{blabla}
+
+    \section{Modélisation à événements discrets}
+        \subsection{blabla}
+
+
+\end{document}
