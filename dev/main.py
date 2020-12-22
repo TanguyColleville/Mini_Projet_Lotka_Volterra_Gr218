@@ -28,18 +28,18 @@ u_eq=c/(m*q*p)
 v_eq=(a2/c2)*(k2+c/(m*q*p))
 w_eq=(1/(m*q)*((a1*p*m*q-b1*c)/(p*m*q)-(c1*a2*(c+k2*p*m*q))/(c2*(c+k1*p*m*q))))
 
-def F(Vector,t):
+def F(Vector,t):# problème de Cauchy 
     result=[]
     result.append((a1-b1*Vector[0]-(c1*Vector[1])/(Vector[0]+k1))*Vector[0]-m*q*Vector[0]*Vector[2])
     result.append((a2-c2*Vector[1]/(Vector[0]+k2))*Vector[1])
     result.append(lmda*(p*m*q*Vector[0]-c)*Vector[2])
     return result
     
-Y0=[u0,v0,w0]
-N=100000
-t_final = 100
+Y0=[u0,v0,w0]# Vecteur initiale
+N=1000# Nombre de valeurs 
+t_final = 100 # temps final
 LT=np.linspace(0,t_final,N)
-S=spi.odeint(F,Y0,LT)
+S=spi.odeint(F,Y0,LT)# résolution du problème de Cauchy 
 solU=[S[i][0] for i in range(N)]
 solV=[S[i][1] for i in range(N)]
 solW=[S[i][2] for i in range(N)]
@@ -82,6 +82,19 @@ plt.plot(LT,[v_eq]*N,label="V equi")
 plt.plot(LT,[w_eq]*N,label="W equi")
 plt.legend()
 plt.title("Euler explicite od1 ")
+plt.show()
+
+plt.figure()
+plt.plot(u_euler,v_euler,label="Sardines et Requins")
+plt.legend()
+plt.title("Sardines et requins ")
+plt.show()
+
+plt.figure()
+u_euler,v_euler=np.meshgrid(u_euler,v_euler)
+plt.contour(u_euler,v_euler,w_euler,35)
+plt.legend()
+plt.title("PLt contour ")
 plt.show()
 
 fig = plt.figure()
