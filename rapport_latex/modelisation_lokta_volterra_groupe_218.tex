@@ -125,22 +125,83 @@
         \subsection{blabla}
 
     \section{Modélisation à état continu}
-        \subsection{Lotka Volterra}
+        \subsection{Mise en équation du modèle Lotka Volterra}
         % description équation formulation du problème de Cauchy + Schéma d'Euler avec convergence du modèle prouvé 
         On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps\
-        Ces grandeurs vérifient le système déquations différentielles non linéaire suivant : 
+        Ces grandeurs vérifient le système d'équations différentielles non linéaires suivant : 
         $ \left\{
             \begin{array}[t]{l}
-                \dfrac{u}{t} = \left( a_1 - b_1 u - \dfrac{u}{t}  \right) \\
-                v\\
-                w
+                \dfrac{u}{t} = \left( a_1 - b_1 u - \dfrac{c_1 v}{u+ k_1}  \right) u - mquw \\
+                \dfrac{v}{t} = \left( a_2 - \dfrac{c_2 v}{u+ k_2} \right) v \\
+                \dfrac{w}{t} = \lambda \left( pmqu - c \right) w
             \end{array}
         \right.$
+        Avec les conditions initiales suivantes :  $u(0) \geq 0$, $v(0) \geq 0$ et $w(0) \geq 0$.
+        On en déduit le schéma d'euler explicite suivant : 
+        $ \left\{
+            \begin{array}[t]{l}
+                u_{n+1} = u_n + h \left( \left( a_1 - b_1 u_n - \dfrac{c_1 v_n}{u_n + k_1}  \right) u_n - mqu_n w_n \right)\\
+                v_{n+1} = v_n + h \left( \left( a_2 - \dfrac{c_2 v_n}{u_n + k_2} \right) v_n \right\\
+                w_{n+1} = w_n + h \left( \lambda \left( pmq u_n - c \right) w_n \right)
+            \end{array}
+        \right.$
+        Ce système est convergent d'ordre 1.
+
         %copie d'analyse des points d'equ
+        \subsection{Analyse des points d'équililbre}
+        $ \left\{
+            \begin{array}[t]{l}
+                \dfrac{u}{t} =0 \\
+                \dfrac{v}{t} = 0\\
+                w_{n+1} = 0
+            \end{array}
+        \right.$
+        
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
+        \subsection{Evolution des grandeurs ...}
+        \begin{center}
+            \includegraphics[width=10cm]{figures/Scipy_good_conditions.png}
+            \captionof{figure}{Evolution des grandeurs, méthode Scipy}
+        \end{center}
+
+        \begin{center}
+            \includegraphics[width=10cm]{figures/Euler_good_conditions.png}
+            \captionof{figure}{Evolution des grandeurs, méthode d'Euler}
+        \end{center}
+
+        \begin{center}
+            \includegraphics[width=10cm]{figures/Euler_VS_Scipy_good_conditions.png}
+            \captionof{figure}{Comparaison des méthodes de résolution avec Euler explicite et Scipy}
+        \end{center}
+
         % Courbes  : 3 portraits de phase 2d + ligne 3D u,v,w 
+        \subsection{Portrait de phase des grandeurs $u,v,w$}
+        \begin{center}
+            \includegraphics[width=10cm]{figures/convergence_3d_point_equilibre.png}
+            \captionof{figure}{Convergence vers le point d'équilibre}
+        \end{center}
+
+        \begin{center}
+            \includegraphics[width=10cm]{figures/Portrait_de_phase_peche.png}
+            \captionof{figure}{Portrait de phase de l'effort de peche}
+        \end{center}
+
+        \begin{center}
+            \includegraphics[width=10cm]{figures/Portrait_de_phase_requins.png}
+            \captionof{figure}{Portrait de phase de la densité de requins}
+        \end{center}
+
+        \begin{center}
+            \includegraphics[width=10cm]{figures/Portrait_de_phase_sardine.png}
+            \captionof{figure}{Portrait de phase de la densité de sardines}
+        \end{center}
+
         % comparasion à nos attentes dans la vie réelle --> regarder les sardines disparaissent mer adriatique
+        \subsection{Conclusion}
+
         % on prends l'exemple y'a que des sardines pas de prédateurs 
+        \subsection{Cas particulier du système sans prédateur}
+
     \section{Modélisation à événements discrets}
         \subsection{blabla}
         % Réseau de pétri 

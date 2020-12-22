@@ -7,8 +7,8 @@ from mpl_toolkits import mplot3d
  
 # u0=1# valeur initiale 
 # v0=1
-u0=1000# valeur initiale 
-v0=0.001
+u0=100# valeur initiale 
+v0=0.01
 w0=0.16
 
 #valeurs des paramètres du modèle
