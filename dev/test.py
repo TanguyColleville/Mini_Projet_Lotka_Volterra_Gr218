@@ -1,1 +1,0 @@
-# Auteurs : Matthieu Briet; Antoine Pagneux; Tanguy Colleville
