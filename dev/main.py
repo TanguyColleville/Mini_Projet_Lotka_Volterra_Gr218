@@ -5,9 +5,10 @@ import numpy as np
 import scipy.integrate as spi
 from mpl_toolkits import mplot3d
  
-
 u0=1# valeur initiale 
 v0=1
+# u0=1000# valeur initiale 
+# v0=0.001
 w0=0.16
 
 #valeurs des paramètres du modèle
@@ -50,6 +51,7 @@ ax = plt.axes(projection='3d')
 ax.plot3D(solU, solV, solW, 'red')
 plt.xlabel("Sardines")
 plt.ylabel("Requins")
+plt.title("Ligne de convergence Scipy")
 plt.show()
 
 plt.figure()
@@ -67,21 +69,39 @@ plt.show()
 u_euler = [u0]
 v_euler = [v0]
 w_euler = [w0]
+u_prim_euler = [0]
+v_prim_euler = [0]
+w_prim_euler = [0]
 h = t_final/N
 for i in range(len(LT)-1):
     u_euler.append(u_euler[i]  + h * ( (a1 - b1 * u_euler[i] - ((c1*v_euler[i]) / (u_euler[i]+k1))) * u_euler[i] - m*q * u_euler[i] * w_euler[i]) )
     v_euler.append(v_euler[i]+h*((a2-(c2*v_euler[i])/(u_euler[i]+k2))*v_euler[i]))
     w_euler.append(w_euler[i] + h * lmda*(p*m*q*u_euler[i]-c)*w_euler[i])
+    u_prim_euler.append(( (a1 - b1 * u_euler[i] - ((c1*v_euler[i]) / (u_euler[i]+k1))) * u_euler[i] - m*q * u_euler[i] * w_euler[i]))
+    v_prim_euler.append((a2-(c2*v_euler[i])/(u_euler[i]+k2))*v_euler[i])
+    w_prim_euler.append( lmda*(p*m*q*u_euler[i]-c)*w_euler[i] )
+
 
 plt.figure()
-plt.plot(LT,u_euler,label="Sardines")
-plt.plot(LT,v_euler,label="Requins")
-plt.plot(LT,w_euler,label="Efforts de pêche")
+plt.plot(LT,u_euler,label="Sardines euler")
+plt.plot(LT,v_euler,label="Requins euler")
+plt.plot(LT,w_euler,label="Efforts de pêche euler")
 plt.plot(LT,[u_eq]*N,label="U equi")
 plt.plot(LT,[v_eq]*N,label="V equi")
 plt.plot(LT,[w_eq]*N,label="W equi")
 plt.legend()
-plt.title("Euler explicite od1 ")
+plt.title("Résolution avec Euler")
+plt.show()
+
+plt.figure()
+plt.plot(LT,u_euler,label="Sardines euler")
+plt.plot(LT,v_euler,label="Requins euler")
+plt.plot(LT,w_euler,label="Efforts de pêche euler")
+plt.plot(LT,solU,label="Sardines scipy")
+plt.plot(LT,solV,label="Requins scipy")
+plt.plot(LT,solW,label="Efforts de pêche scipy")
+plt.legend()
+plt.title("Euler VS Scipy ")
 plt.show()
 
 plt.figure()
@@ -90,17 +110,46 @@ plt.legend()
 plt.title("Sardines et requins ")
 plt.show()
 
+
 plt.figure()
-u_euler,v_euler=np.meshgrid(u_euler,v_euler)
-plt.contour(u_euler,v_euler,w_euler,35)
+plt.plot(u_euler,u_prim_euler,label="Portrait phase sardines")
 plt.legend()
-plt.title("PLt contour ")
+plt.title("Portrait de phase pour u, population de sardines")
 plt.show()
+
+plt.figure()
+plt.plot(v_euler,v_prim_euler,label="Portrait phase requins")
+plt.legend()
+plt.title("Portrait de phase pour v, population de requin")
+plt.show()
+
+plt.figure()
+plt.plot(w_euler,w_prim_euler,label="Portrait phase intensité de pêche")
+plt.legend()
+plt.title("Portrait de phase pour w, intensité de la pêche")
+plt.show()
+
+# plt.figure()
+# u_euler=np.array(u_euler)
+# v_euler=np.array(v_euler)
+# w_euler=np.array(w_euler)
+
+# u_prim_euler=np.array(u_prim_euler)
+# v_prim_euler=np.array(v_prim_euler)
+# LTarray=np.array(LT)
+
+# print(len(LTarray))
+# print(len(u_prim_euler))
+# print(len(v_prim_euler))
+# plt.streamplot(LTarray,LTarray,u_prim_euler,v_prim_euler)
+# plt.legend()
+# plt.title("PLt contour ")
+# plt.show()
 
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.plot3D(u_euler, v_euler, w_euler, 'red')
 plt.xlabel("Sardines")
 plt.ylabel("Requins")
-plt.title("Euler")
+plt.title("Euler convergence vers le point d'équilibre")
 plt.show()
