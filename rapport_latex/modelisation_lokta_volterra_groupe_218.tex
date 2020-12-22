@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}% gestion des accents (source)
 \usepackage[T1]{fontenc}% gestion des accents (PDF)
 \usepackage[francais]{babel}% gestion du français
-
+\usepackage{natbib}% utilisation du lib de référence zotero
 \usepackage{textcomp}% caractères additionnels
 \usepackage{mathtools,amssymb,amsthm}% packages de l'AMS + mathtools
 \usepackage{lmodern}% police de caractère
@@ -130,5 +130,7 @@
     \section{Modélisation à événements discrets}
         \subsection{blabla}
 
-
+    \nocite{*}
+    \bibliographystyle{plain}
+    \bibliography{lib}
 \end{document}

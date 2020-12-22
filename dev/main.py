@@ -37,7 +37,7 @@ def F(Vector,t):
     
 Y0=[u0,v0,w0]
 N=100000
-t_final = 70
+t_final = 100
 LT=np.linspace(0,t_final,N)
 S=spi.odeint(F,Y0,LT)
 solU=[S[i][0] for i in range(N)]
