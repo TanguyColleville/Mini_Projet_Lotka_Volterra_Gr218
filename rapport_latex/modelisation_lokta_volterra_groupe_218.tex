@@ -8,6 +8,8 @@
 \usepackage{lmodern}% police de caractère
 \usepackage{geometry}% gestion des marges
 \usepackage{graphicx}% gestion des images
+\usepackage{caption}% gestion des figures
+\usepackage{subcaption}% sous figures
 \usepackage{xcolor}% gestion des couleurs
 \usepackage{array}% gestion améliorée des tableaux
 \usepackage{calc}% syntaxe naurelle pour les calculs
@@ -49,16 +51,16 @@
 	[\addvspace{0pt}]% matériel après
 	
 	\dottedcontents{subsection}%
-	[3em]% retrait gauche
+	[4.5em]% retrait gauche
 	{\addvspace{0pt}}% matériel avant
-	{1.5em}% espacement de contentslabel
+	{3em}% espacement de contentslabel
 	{0.75em}% espace entre les . . . .
     [\addvspace{0pt}]% matériel après
 
     \dottedcontents{subsubsection}%
-	[4.5em]% retrait gauche
+	[6em]% retrait gauche
 	{\addvspace{0pt}}% matériel avant
-	{1.5em}% espacement de contentslabel
+	{3em}% espacement de contentslabel
 	{0.75em}% espace entre les . . . .
     [\addvspace{0pt}]% matériel après
 
@@ -114,87 +116,111 @@
 
     \newpage
     \section{Introduction}
-        \subsection{blabla}
         L'objectif de ce projet de modélisation est de proposer une simulation de l'évolution des populations,  
         d'un couple proie prédateur dans un écosystème, par le biais des équations de Lotka Volterra. Dans un premier temps,
-        Nous étudirons et developperons  le modèle à temps continu pour ensuite nous intéresser à la modélisation
-        en temps discret. Nous nous interesserons à l'évolution des populations de sardines et de requins
-        dans la mer adriatique. Ce type d'étude peut aider des états à prendre des mesures politiques environnementales 
+        Nous étudierons et développerons  le modèle à temps continu pour ensuite nous intéresser à la modélisation
+        en temps discret. Nous nous intéresserons à l'évolution des populations de sardines et de requins
+        dans la mer Adriatique. Ce type d'étude peut aider des états à prendre des mesures politiques environnementales 
         et commerciale afin de préserver les écosystèmes des impacts de l'activité humaine, telle que la pêche intensive
         qui menace certaines espèces. 
-        \subsection{blabla}
 
     \section{Modélisation à état continu}
         \subsection{Mise en équation du modèle Lotka Volterra}
         % description équation formulation du problème de Cauchy + Schéma d'Euler avec convergence du modèle prouvé 
         On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps\
         Ces grandeurs vérifient le système d'équations différentielles non linéaires suivant : 
+        \begin{center}
         $ \left\{
-            \begin{array}[t]{l}
-                \dfrac{u}{t} = \left( a_1 - b_1 u - \dfrac{c_1 v}{u+ k_1}  \right) u - mquw \\
-                \dfrac{v}{t} = \left( a_2 - \dfrac{c_2 v}{u+ k_2} \right) v \\
-                \dfrac{w}{t} = \lambda \left( pmqu - c \right) w
+            \begin{array}{ll}
+                \dfrac{\partial u}{ \partial t} = \left( a_1 - b_1 u - \dfrac{c_1 v}{u+ k_1}  \right) u - mquw \\
+                \dfrac{\partial v}{ \partial t} = \left( a_2 - \dfrac{c_2 v}{u+ k_2} \right) v \\
+                \dfrac{\partial w}{ \partial t} = \lambda \left( pmqu - c \right) w
             \end{array}
         \right.$
+        \end{center}
         Avec les conditions initiales suivantes :  $u(0) \geq 0$, $v(0) \geq 0$ et $w(0) \geq 0$.
-        On en déduit le schéma d'euler explicite suivant : 
+        On en déduit le schéma d'Euler explicite suivant : 
+        \begin{center}
         $ \left\{
-            \begin{array}[t]{l}
+            \begin{array}{ll}
                 u_{n+1} = u_n + h \left( \left( a_1 - b_1 u_n - \dfrac{c_1 v_n}{u_n + k_1}  \right) u_n - mqu_n w_n \right)\\
-                v_{n+1} = v_n + h \left( \left( a_2 - \dfrac{c_2 v_n}{u_n + k_2} \right) v_n \right\\
+                v_{n+1} = v_n + h \left( \left( a_2 - \dfrac{c_2 v_n}{u_n + k_2} \right) v_n \right) \\
                 w_{n+1} = w_n + h \left( \lambda \left( pmq u_n - c \right) w_n \right)
             \end{array}
         \right.$
+        \end{center}
         Ce système est convergent d'ordre 1.
 
         %copie d'analyse des points d'equ
-        \subsection{Analyse des points d'équililbre}
+        \subsection{Analyse des points d'équilibre}
+        On cherche les points d'équilibre $  \left( \overline{u},  \overline{v}, \overline{w} \right)$ tels que : 
+        \begin{center}
         $ \left\{
-            \begin{array}[t]{l}
-                \dfrac{u}{t} =0 \\
-                \dfrac{v}{t} = 0\\
-                \dfrac{w}{t} = 0
+            \begin{array}{ll}
+                \dfrac{\partial u}{\partial t} \left( \overline{u},  \overline{v}, \overline{w} \right) =0 \\
+                \dfrac{\partial v}{\partial t} \left( \overline{u},  \overline{v}, \overline{w} \right) = 0\\
+                \dfrac{\partial w}{\partial t}  \left( \overline{u},  \overline{v}, \overline{w} \right) = 0
             \end{array}
         \right.$
+        $ \Leftrightarrow \left\{ 
+        	\begin{array}{ll}
+                a_1 \overline{u} - b_1 \overline{u}^2 - \dfrac{c_1 \overline{v}}{\overline{u} + k_1} \overline{u} - mq \overline{u} \overline{w} =0 \\
+                a_2 - \dfrac{c_2 \overline{v}^2}{\overline{u} + k_2} = 0\\
+                \lambda \overline{w} \left( pmq \overline{u} - c \right) = 0
+            \end{array}
+        \right.$
+        \end{center}
         
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
-        \subsection{Evolution des grandeurs ...}
-        \begin{center}
-            \includegraphics[width=10cm]{figures/Scipy_good_conditions.png}
-            \captionof{figure}{Evolution des grandeurs, méthode Scipy}
-        \end{center}
+        \subsection{Évolution des grandeurs en fonction du temps}
+        
+        \begin{figure}[!h]
+    		\begin{minipage}[b]{.4\textwidth}
+        		\centering
+        		\includegraphics[width=7cm]{figures/Scipy_good_conditions.png}
+            	\captionof{figure}{Évolution des grandeurs, méthode Scipy}
+    		\end{minipage}
+    		\hfill
+    		\begin{minipage}[b]{.4\textwidth}
+        		\centering
+       			\includegraphics[width=7cm]{figures/Euler_good_conditions.png}
+            	\captionof{figure}{Évolution des grandeurs, méthode d'Euler}
+    		\end{minipage}
+    		
+		\end{figure}
 
         \begin{center}
-            \includegraphics[width=10cm]{figures/Euler_good_conditions.png}
-            \captionof{figure}{Evolution des grandeurs, méthode d'Euler}
-        \end{center}
-
-        \begin{center}
-            \includegraphics[width=10cm]{figures/Euler_VS_Scipy_good_conditions.png}
+            \includegraphics[width=8cm]{figures/Euler_VS_Scipy_good_conditions.png}
             \captionof{figure}{Comparaison des méthodes de résolution avec Euler explicite et Scipy}
         \end{center}
 
         % Courbes  : 3 portraits de phase 2d + ligne 3D u,v,w 
         \subsection{Portrait de phase des grandeurs $u,v,w$}
         \begin{center}
-            \includegraphics[width=10cm]{figures/convergence_3d_point_equilibre.png}
+            \includegraphics[width=8cm]{figures/convergence_3d_point_equilibre.png}
             \captionof{figure}{Convergence vers le point d'équilibre}
         \end{center}
+        
+        \begin{figure}[!h]
+    		\begin{subfigure}[b]{.3\textwidth}
+        		\centering
+        		\includegraphics[width=\textwidth]{figures/Portrait_de_phase_peche.png}
+            	\caption{Effort de pêche}
+    		\end{subfigure}
+    		\begin{subfigure}[b]{.3\textwidth}
+        		\centering
+       			\includegraphics[width=\textwidth]{figures/Portrait_de_phase_requins.png}
+            	%\captionof{figure}{Portrait de phase de la densité de requins}
+        		\caption{Requins}
+    		\end{subfigure}
+    		\begin{subfigure}[b]{.3\textwidth}
+        		\centering
+       			\includegraphics[width=\textwidth]{figures/Portrait_de_phase_sardine.png}
+            	\caption{Sardines}
+    		\end{subfigure}
+    		\caption{Portrait de phases}
+		\end{figure}
 
-        \begin{center}
-            \includegraphics[width=10cm]{figures/Portrait_de_phase_peche.png}
-            \captionof{figure}{Portrait de phase de l'effort de peche}
-        \end{center}
-
-        \begin{center}
-            \includegraphics[width=10cm]{figures/Portrait_de_phase_requins.png}
-            \captionof{figure}{Portrait de phase de la densité de requins}
-        \end{center}
-
-        \begin{center}
-            \includegraphics[width=10cm]{figures/Portrait_de_phase_sardine.png}
-            \captionof{figure}{Portrait de phase de la densité de sardines}
-        \end{center}
 
         % comparasion à nos attentes dans la vie réelle --> regarder les sardines disparaissent mer adriatique
         \subsection{Conclusion}
@@ -206,7 +232,7 @@
         \subsection{blabla}
         % Réseau de pétri 
 
-    \nocite{*}
-    \bibliographystyle{plain}
-    \bibliography{lib}
+    %\nocite{*}
+    %\bibliographystyle{plain}
+    %\bibliography{lib}
 \end{document}

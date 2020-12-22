@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.3)  21 DEC 2020 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.3)  22 DEC 2020 21:55
 entering extended mode
 **d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/modelisation_lokta_volterra_groupe_218.tex
 (d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/modelisation_lokta_volterra_groupe_218.tex
@@ -80,27 +80,33 @@ Package babel Info: Making ? an active character on input line 433.
 ))) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
+) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count193
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count193
-\calc@Bcount=\count194
+\calc@Acount=\count194
+\calc@Bcount=\count195
 \calc@Adimen=\dimen148
 \calc@Bdimen=\dimen149
-\calc@Askip=\skip49
-\calc@Bskip=\skip50
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count195
-\calc@Cskip=\skip51
+\calc@Ccount=\count196
+\calc@Cskip=\skip53
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip52
+\@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -115,13 +121,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count196
+\inf@bad=\count197
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count197
-\leftroot@=\count198
+\uproot@=\count198
+\leftroot@=\count199
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count199
-\DOTSCASE@=\count266
+\classnum@=\count266
+\DOTSCASE@=\count267
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -130,15 +136,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count267
-\c@MaxMatrixCols=\count268
+\macc@depth=\count268
+\c@MaxMatrixCols=\count269
 \dotsspace@=\muskip16
-\c@parentequation=\count269
-\dspbrk@lvl=\count270
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
 \tag@help=\toks20
-\row@=\count271
-\column@=\count272
-\maxfields@=\count273
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
 \andhelp@=\toks21
 \eqnshift@=\dimen153
 \alignsep@=\dimen154
@@ -147,8 +153,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen157
 \lineht@=\dimen158
 \@envbody=\toks22
-\multlinegap=\skip53
-\multlinetaggap=\skip54
+\multlinegap=\skip55
+\multlinetaggap=\skip56
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
@@ -157,9 +163,9 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count274
+\g_MT_multlinerow_int=\count275
 \l_MT_multwidth_dim=\dimen159
-\origjot=\skip55
+\origjot=\skip57
 \l_MT_shortvdotswithinadjustabove_dim=\dimen160
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen161
 \l_MT_above_intertext_sep=\dimen162
@@ -184,9 +190,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks26
 \thm@notefont=\toks27
 \thm@headpunct=\toks28
-\thm@preskip=\skip56
-\thm@postskip=\skip57
-\thm@headsep=\skip58
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
 \dth@everypar=\toks29
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -229,9 +235,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count275
-\Gm@cntv=\count276
-\c@Gm@tempcnt=\count277
+\Gm@cnth=\count276
+\Gm@cntv=\count277
+\c@Gm@tempcnt=\count278
 \Gm@bindingoffset=\dimen167
 \Gm@wd@mp=\dimen168
 \Gm@odd@mp=\dimen169
@@ -256,6 +262,26 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
+) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen177
+\captionmargin@=\dimen178
+\captionwidth=\dimen179
+\caption@tempdima=\dimen180
+\caption@indent=\dimen181
+\caption@parindent=\dimen182
+\caption@hangindent=\dimen183
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count279
+\c@continuedfloat=\count280
+) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count281
+\c@subtable=\count282
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -273,51 +299,51 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen177
+\col@sep=\dimen184
 \ar@mcellbox=\box50
-\extrarowheight=\dimen178
+\extrarowheight=\dimen185
 \NC@list=\toks31
-\extratabsurround=\skip59
-\backup@length=\skip60
+\extratabsurround=\skip61
+\backup@length=\skip62
 \ar@cellbox=\box51
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box52
-\beforetitleunit=\skip61
-\aftertitleunit=\skip62
-\ttl@plus=\dimen179
-\ttl@minus=\dimen180
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
+\ttl@plus=\dimen186
+\ttl@minus=\dimen187
 \ttl@toksa=\toks32
-\titlewidth=\dimen181
-\titlewidthlast=\dimen182
-\titlewidthfirst=\dimen183
+\titlewidth=\dimen188
+\titlewidthlast=\dimen189
+\titlewidthfirst=\dimen190
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.sty
 Package: titletoc 2019/10/16 v2.13 TOC entries
-\ttl@leftsep=\dimen184
+\ttl@leftsep=\dimen191
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
-\f@nch@headwidth=\skip63
-\f@nch@O@elh=\skip64
-\f@nch@O@erh=\skip65
-\f@nch@O@olh=\skip66
-\f@nch@O@orh=\skip67
-\f@nch@O@elf=\skip68
-\f@nch@O@erf=\skip69
-\f@nch@O@olf=\skip70
-\f@nch@O@orf=\skip71
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip72
-\thanksmargin=\skip73
-\droptitle=\skip74
+\thanksmarkwidth=\skip74
+\thanksmargin=\skip75
+\droptitle=\skip76
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip75
-\enit@outerparindent=\dimen185
+\labelindent=\skip77
+\enit@outerparindent=\dimen192
 \enit@toks=\toks33
 \enit@inbox=\box53
-\enit@count@id=\count278
-\enitdp@description=\count279
+\enit@count@id=\count283
+\enitdp@description=\count284
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -348,9 +374,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen186
-\Hy@linkcounter=\count280
-\Hy@pagecounter=\count281
+\@linkdim=\dimen193
+\Hy@linkcounter=\count285
+\Hy@pagecounter=\count286
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -360,7 +386,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count282
+\Hy@SavedSpaceFactor=\count287
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 4338.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4338.
 Package hyperref Info: Option `breaklinks' set `true' on input line 4338.
@@ -372,17 +398,17 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count283
+\c@Hy@tempcnt=\count288
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen187
+\XeTeXLinkMargin=\dimen194
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count284
-\Field@Width=\dimen188
-\Fld@charsize=\dimen189
+\Fld@menulength=\count289
+\Field@Width=\dimen195
+\Fld@charsize=\dimen196
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -396,9 +422,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
-\Hy@abspage=\count285
-\c@Item=\count286
-\c@Hfootnote=\count287
+\Hy@abspage=\count290
+\c@Item=\count291
+\c@Hfootnote=\count292
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -407,8 +433,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count288
-\c@bookmark@seq@number=\count289
+\Fld@listcount=\count293
+\c@bookmark@seq@number=\count294
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
@@ -416,44 +442,48 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip76
+\Hy@SectionHShift=\skip78
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 77.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 79.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count290
+\l__kernel_color_stack_int=\count295
 \l__pdf_internal_box=\box54
 ) (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.aux)
 \openout1 = `modelisation_lokta_volterra_groupe_218.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Info: Redefining \degres on input line 77.
-LaTeX Info: Redefining \dots on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Info: Redefining \degres on input line 79.
+LaTeX Info: Redefining \dots on input line 79.
+
+
+Package french.ldf Warning: Please load the "natbib" package
+(french.ldf)                BEFORE babel/french; reported on input line 79.
+
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 77.
+(french.ldf)             reported on input line 79.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 77.
-LaTeX Info: Redefining \up on input line 77.
-
+(french.ldf)             reported on input line 79.
+LaTeX Info: Redefining \up on input line 79.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -490,22 +520,25 @@ LaTeX Info: Redefining \up on input line 77.
 
 (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen190
+\scratchcounter=\count296
+\scratchdimen=\dimen197
 \scratchbox=\box55
-\nofMPsegments=\count292
-\nofMParguments=\count293
+\nofMPsegments=\count297
+\nofMParguments=\count298
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen191
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen198
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
 \everyMPtoPDFconversion=\toks35
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-Package hyperref Info: Link coloring ON on input line 77.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 79.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -513,69 +546,59 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count297
+\c@section@level=\count302
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
  (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.out) (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.out)
 \@outlinefile=\write3
 \openout3 = `modelisation_lokta_volterra_groupe_218.out'.
 
-<images/cs.png, id=31, 1204.5pt x 624.3325pt>
+<images/cs.png, id=43, 1204.5pt x 624.3325pt>
 File: images/cs.png Graphic file (type png)
 <use images/cs.png>
-Package pdftex.def Info: images/cs.png  used on input line 93.
+Package pdftex.def Info: images/cs.png  used on input line 95.
 (pdftex.def)             Requested size: 227.62204pt x 117.9766pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 105.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 107.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 105.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 107.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 105.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 107.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 105.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 107.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 105.
+(Font)              <10.95> on input line 107.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 105.
+(Font)              <8> on input line 107.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 105.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105.
+(Font)              <6> on input line 107.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 107.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 107.
  (C:\Users\Antoine\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Antoine/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/images/cs.png>] (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.toc
-Overfull \hbox (0.30386pt too wide) detected at line 6
-\T1/lmr/m/n/10.95 II.1 
- []
-
-
-Overfull \hbox (4.56206pt too wide) detected at line 8
-\T1/lmr/m/n/10.95 III.1 
- []
-
-)
+{C:/Users/Antoine/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/images/cs.png>] (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.toc)
 \tf@toc=\write4
 \openout4 = `modelisation_lokta_volterra_groupe_218.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.111     \listoffigures
+l.113     \listoffigures
                          [1
 
 ] (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.lof)
@@ -585,33 +608,114 @@ l.111     \listoffigures
  [2
 
 ]
+<figures/Scipy_good_conditions.png, id=111, 462.528pt x 346.896pt>
+File: figures/Scipy_good_conditions.png Graphic file (type png)
+<use figures/Scipy_good_conditions.png>
+Package pdftex.def Info: figures/Scipy_good_conditions.png  used on input line 180.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+Overfull \hbox (23.90306pt too wide) in paragraph at lines 180--181
+ [][] 
+ []
+
+<figures/Euler_good_conditions.png, id=112, 462.528pt x 346.896pt>
+File: figures/Euler_good_conditions.png Graphic file (type png)
+<use figures/Euler_good_conditions.png>
+Package pdftex.def Info: figures/Euler_good_conditions.png  used on input line 186.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+Overfull \hbox (23.90306pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/Euler_VS_Scipy_good_conditions.png, id=113, 462.528pt x 346.896pt>
+File: figures/Euler_VS_Scipy_good_conditions.png Graphic file (type png)
+<use figures/Euler_VS_Scipy_good_conditions.png>
+Package pdftex.def Info: figures/Euler_VS_Scipy_good_conditions.png  used on input line 193.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 194.
+See the caption package documentation for explanation.
+
 File: images/cs.png Graphic file (type png)
 <use images/cs.png>
-Package pdftex.def Info: images/cs.png  used on input line 127.
+Package pdftex.def Info: images/cs.png  used on input line 194.
 (pdftex.def)             Requested size: 54.88019pt x 28.45274pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 32.53278pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.aux)
+[3]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 198.
+
+<figures/convergence_3d_point_equilibre.png, id=123, 462.528pt x 346.896pt>
+File: figures/convergence_3d_point_equilibre.png Graphic file (type png)
+<use figures/convergence_3d_point_equilibre.png>
+Package pdftex.def Info: figures/convergence_3d_point_equilibre.png  used on input line 200.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 201.
+See the caption package documentation for explanation.
+
+<figures/Portrait_de_phase_peche.png, id=124, 462.528pt x 346.896pt>
+File: figures/Portrait_de_phase_peche.png Graphic file (type png)
+<use figures/Portrait_de_phase_peche.png>
+Package pdftex.def Info: figures/Portrait_de_phase_peche.png  used on input line 207.
+(pdftex.def)             Requested size: 131.45302pt x 98.59113pt.
+<figures/Portrait_de_phase_requins.png, id=125, 462.528pt x 346.896pt>
+File: figures/Portrait_de_phase_requins.png Graphic file (type png)
+<use figures/Portrait_de_phase_requins.png>
+Package pdftex.def Info: figures/Portrait_de_phase_requins.png  used on input line 212.
+(pdftex.def)             Requested size: 131.45302pt x 98.59113pt.
+<figures/Portrait_de_phase_sardine.png, id=126, 462.528pt x 346.896pt>
+File: figures/Portrait_de_phase_sardine.png Graphic file (type png)
+<use figures/Portrait_de_phase_sardine.png>
+Package pdftex.def Info: figures/Portrait_de_phase_sardine.png  used on input line 218.
+(pdftex.def)             Requested size: 131.45302pt x 98.59113pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/cs.png Graphic file (type png)
+<use images/cs.png>
+Package pdftex.def Info: images/cs.png  used on input line 238.
+(pdftex.def)             Requested size: 54.88019pt x 28.45274pt.
+[4 <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Scipy_good_conditions.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Euler_good_conditions.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Euler_VS_Scipy_good_conditions.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/convergence_3d_point_equilibre.png>]
+File: images/cs.png Graphic file (type png)
+<use images/cs.png>
+Package pdftex.def Info: images/cs.png  used on input line 238.
+(pdftex.def)             Requested size: 54.88019pt x 28.45274pt.
+ [5 <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Portrait_de_phase_peche.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Portrait_de_phase_requins.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Portrait_de_phase_sardine.png>] (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.aux)
 Package rerunfilecheck Info: File `modelisation_lokta_volterra_groupe_218.out' has not changed.
-(rerunfilecheck)             Checksum: 7F2E457B871F1C83F3F76757F6C9E32F;469.
+(rerunfilecheck)             Checksum: 004FD4DE88C87D0D7A52E316A72AD750;849.
  ) 
 Here is how much of TeX's memory you used:
- 10585 strings out of 480224
- 161957 string characters out of 2879153
- 492079 words of memory out of 3000000
- 26917 multiletter control sequences out of 15000+200000
- 593860 words of font info for 62 fonts, out of 3000000 for 9000
+ 12215 strings out of 480224
+ 192146 string characters out of 2879153
+ 532514 words of memory out of 3000000
+ 28517 multiletter control sequences out of 15000+200000
+ 600867 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,15n,77p,539b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.pdf (4 pages, 188676 bytes).
+ 70i,16n,77p,539b,562s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.pdf (6 pages, 477866 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 62 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
