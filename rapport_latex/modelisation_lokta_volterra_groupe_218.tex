@@ -127,7 +127,15 @@
     \section{Modélisation à état continu}
         \subsection{Lotka Volterra}
         % description équation formulation du problème de Cauchy + Schéma d'Euler avec convergence du modèle prouvé 
-        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps\dots
+        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps\
+        Ces grandeurs vérifient le système déquations différentielles non linéaire suivant : 
+        $ \left\{
+            \begin{array}[t]{l}
+                \dfrac{u}{t} = \left( a_1 - b_1 u - \dfrac{u}{t}  \right) \\
+                v\\
+                w
+            \end{array}
+        \right.$
         %copie d'analyse des points d'equ
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
         % Courbes  : 3 portraits de phase 2d + ligne 3D u,v,w 
