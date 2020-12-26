@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy.integrate as spi
 from mpl_toolkits import mplot3d
- 
+
 # u0=1# valeur initiale 
 # v0=1
-u0=100# valeur initiale 
-v0=0.01
+u0=1.1# valeur initiale 
+v0=0.1
 w0=0.16
 
 #valeurs des paramètres du modèle
@@ -129,22 +129,6 @@ plt.legend()
 plt.title("Portrait de phase pour w, intensité de la pêche")
 plt.show()
 
-# plt.figure()
-# u_euler=np.array(u_euler)
-# v_euler=np.array(v_euler)
-# w_euler=np.array(w_euler)
-
-# u_prim_euler=np.array(u_prim_euler)
-# v_prim_euler=np.array(v_prim_euler)
-# LTarray=np.array(LT)
-
-# print(len(LTarray))
-# print(len(u_prim_euler))
-# print(len(v_prim_euler))
-# plt.streamplot(LTarray,LTarray,u_prim_euler,v_prim_euler)
-# plt.legend()
-# plt.title("PLt contour ")
-# plt.show()
 
 fig = plt.figure()
 ax = plt.axes(projection='3d')
