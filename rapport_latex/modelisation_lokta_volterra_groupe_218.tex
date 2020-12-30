@@ -121,7 +121,7 @@
         Nous étudierons et développerons  le modèle à temps continu pour ensuite nous intéresser à la modélisation
         en temps discret. Nous nous intéresserons à l'évolution des populations de sardines et de requins
         dans la mer Adriatique. Ce type d'étude peut aider des états à prendre des mesures politiques environnementales 
-        et commerciale afin de préserver les écosystèmes des impacts de l'activité humaine, telle que la pêche intensive
+        et commerciales afin de préserver les écosystèmes des impacts de l'activité humaine, telle que la pêche intensive
         qui menace certaines espèces. 
 
     \section{Modélisation à état continu}
@@ -149,7 +149,7 @@
             \end{array}
         \right.$
         \end{center}
-        Ce système est convergent d'ordre 1.
+        Ce système est convergent d'ordre 1, autrement dit il assure la stabilité et la consistance du modèle.
 
         %copie d'analyse des points d'equ
         \subsection{Analyse des points d'équilibre}
@@ -224,14 +224,35 @@
 
         % comparasion à nos attentes dans la vie réelle --> regarder les sardines disparaissent mer adriatique
         \subsection{Conclusion}
-
-        % on prends l'exemple y'a que des sardines pas de prédateurs 
-        \subsection{Cas particulier du système sans prédateur}
+        On peut voir que notre modèle est juste, en effet on retrouve les résultats mis en exergue 
+        dans les papiers de recherche à propos de ce sujet.\cite{} On remarque également que nos modèles
+        sont convergents, i.e. stable et consistant. De plus on remarque que la méthode de résolution avec
+        scipy vient corroborer les résultats obtenus via la méthode d'euler explicite. Enfin, ces deux modèles
+        permettent de vérifier nos intuitions quant aux dynamiques de population avec des cas particuliers,
+        comme l'abscence de pêche qui induit un état d'équilibre plus haut pour la population de sardine. 
+        Cependant les cas de ce genre ne sont pas exposés dans ce rapport par soucis de concision. 
+        %\subsection{Cas particulier du système sans prédateur}
 
     \section{Modélisation à événements discrets}
-        \subsection{blabla}
+        \subsection{Réseau de pétri}
         % Réseau de pétri 
+        Pour modéliser la prise en compte des morts et naissances à l'état discret nous avons developper
+        le modèle de Lotka-Volterra en temps discret avec le réseau de Pétri ci-dessous. 
 
+
+
+        Ce réseau permet via un compteur de comptabilisé le paramètre a1 et a2 qui représente le taux de
+        natalité de chaque population. Il permet également via le même système de compteur de modéliser 
+        l'effort de pêche. Aussi, la compétition entre individu définie par les variablesX X  et pris en
+        compte avec les puits qui symbolysent la mort d'un individu. 
+    \section{Conclusion}
+    Nous avons pu voir au terme de ce projet, les enjeux de la modélisation d'un phénomène complexe. En effet, 
+    la prise d'initiative et d'hypothèses ont été primordiales afin de mener à bien notre projet de modélisation 
+    de l'évolution des populations de sardines exposées à la pêche et à la chasse des requins en mer adriatique. 
+    Par ailleurs, nous avons pu voir, par le biais de différentes modélisations, que les hypothèses changeaient
+    en passant du temps discret au temps continu. Enfin nous pouvons affirmer que les résultats sont satisfaisants
+    dans la mesure où ses derniers correspondent aux résultats mis en exergue dans les rapports de recherches emis 
+    sur le sujet et dans la mesure où ils viennent corrober nos intuitions concernant la dynamique des populations.
     \nocite{*}
     \bibliographystyle{plain}
     \bibliography{biblio}% il faut un ifchier .bib
