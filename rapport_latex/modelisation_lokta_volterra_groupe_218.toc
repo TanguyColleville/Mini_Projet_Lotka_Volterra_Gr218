@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {II.3}Évolution des grandeurs en fonction du temps}{4}{subsection.0.2.3}%
 \contentsline {subsection}{\numberline {II.4}Portrait de phase des grandeurs $u,v,w$}{4}{subsection.0.2.4}%
 \contentsline {subsection}{\numberline {II.5}Conclusion}{5}{subsection.0.2.5}%
-\contentsline {subsection}{\numberline {II.6}Cas particulier du système sans prédateur}{5}{subsection.0.2.6}%
 \contentsline {section}{\numberline {III}Modélisation à événements discrets}{5}{section.0.3}%
-\contentsline {subsection}{\numberline {III.1}blabla}{5}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {III.1}Réseau de pétri}{5}{subsection.0.3.1}%
+\contentsline {section}{\numberline {IV}Conclusion}{6}{section.0.4}%
 \contentsfinish 
