@@ -127,7 +127,7 @@
     \section{Modélisation à état continu}
         \subsection{Mise en équation du modèle Lotka Volterra}
         % description équation formulation du problème de Cauchy + Schéma d'Euler avec convergence du modèle prouvé 
-        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps\
+        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps. Les différents parmètres sont décrits dans le documents support \cite{} [!!! mettre ref !!!]\\
         Ces grandeurs vérifient le système d'équations différentielles non linéaires suivant : 
         \begin{center}
         $ \left\{
@@ -153,8 +153,7 @@
 
         %copie d'analyse des points d'equ
         \subsection{Analyse des points d'équilibre}
-        On cherche les points d'équilibre $  \left( \overline{u},  \overline{v}, \overline{w} \right)$ tels que : 
-        \begin{center}
+        On cherche les points d'équilibre $  \left( \overline{u},  \overline{v}, \overline{w} \right)$ tels que :\\
         $ \left\{
             \begin{array}{ll}
                 \dfrac{\partial u}{\partial t} \left( \overline{u},  \overline{v}, \overline{w} \right) =0 \\
@@ -165,11 +164,28 @@
         $ \Leftrightarrow \left\{ 
         	\begin{array}{ll}
                 a_1 \overline{u} - b_1 \overline{u}^2 - \dfrac{c_1 \overline{v}}{\overline{u} + k_1} \overline{u} - mq \overline{u} \overline{w} =0 \\
-                a_2 - \dfrac{c_2 \overline{v}^2}{\overline{u} + k_2} = 0\\
+                a_2 - \dfrac{c_2 \overline{v}}{\overline{u} + k_2} = 0\\
                 \lambda \overline{w} \left( pmq \overline{u} - c \right) = 0
             \end{array}
         \right.$
-        \end{center}
+        $ \Leftrightarrow \left\{ 
+        	\begin{array}{ll}
+                \overline{w} =  \dfrac{1}{mq \overline{u}} \left(a_2 a_1 \overline{u} - b_1 \overline{u}^2 - \dfrac{c_1 \overline{v}}{\overline{u} + k_1} \overline{u} \right)\\
+                \overline{v} = \dfrac{a_2}{c_2} \left( \overline{u} + k_2 \right)\\
+                \overline{u} = \dfrac{c}{pmq}
+            \end{array}
+        \right.$
+        \\
+            Soient les points :
+            $\left\{ 
+        	\begin{array}{ll}
+                \overline{w} = \dfrac{1}{mq} \left(  \dfrac{a_1pmq-b_1c}{pmq} - \dfrac{c_1a_2(c+k_2pmq)}{c_2(c+k_1pmq)}    \right)\\
+                \overline{v} =  \dfrac{a_2}{c_2} \left( \dfrac{c}{pmq} + k_2 \right)\\
+                \overline{u} = \dfrac{c}{pmq}
+            \end{array}
+        \right.$
+        à condition que les conditions énoncées dans le lemme 4.1 du document support \cite{} [!!!! mettre la ref !!!!] soient respectées.
+        
         
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
         \subsection{Évolution des grandeurs en fonction du temps}
@@ -239,9 +255,12 @@
         Pour modéliser la prise en compte des morts et naissances à l'état discret nous avons developper
         le modèle de Lotka-Volterra en temps discret avec le réseau de Pétri ci-dessous. 
 
+        \begin{center}
+            \includegraphics[width=8cm]{figures/reseau_petri.png}
+            \captionof{figure}{Réseau de Pétri du système}
+        \end{center}
 
-
-        Ce réseau permet via un compteur de comptabilisé le paramètre a1 et a2 qui représente le taux de
+        Ce réseau permet via un compteur de comptabilisé le paramètre $a_1$ et $a_2$ qui représente le taux de
         natalité de chaque population. Il permet également via le même système de compteur de modéliser 
         l'effort de pêche. Aussi, la compétition entre individu définie par les variablesX X  et pris en
         compte avec les puits qui symbolysent la mort d'un individu. 
