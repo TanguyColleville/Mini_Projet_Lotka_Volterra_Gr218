@@ -184,12 +184,13 @@
                 \overline{u} = \dfrac{c}{pmq}
             \end{array}
         \right.$
-        à condition que les conditions énoncées dans le lemme 4.1 du document support \cite{} [!!!! mettre la ref !!!!] soient respectées.
+        à condition que les conditions énoncées dans le lemme 4.1 du document support soient respectées.
         
         
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
         \subsection{Évolution des grandeurs en fonction du temps}
-        
+        Une solution approchée du systèmes d'équations différentielles a été déterminée à partir du module python Scipy et à partir d'un schéma d'Euler explicite. L'évolution des population de requins, de sardines et de l'effort de pêche est tracé ci-dessous.
+        On remarque que les solutions Scipy et Euler explicite convergent bien vers les valeurs d'équilibre.
         \begin{figure}[!h]
     		\begin{minipage}[b]{.4\textwidth}
         		\centering
@@ -212,6 +213,7 @@
 
         % Courbes  : 3 portraits de phase 2d + ligne 3D u,v,w 
         \subsection{Portrait de phase des grandeurs $u,v,w$}
+        Le graphique d'évolution de la population de requins, de la population de sardines et de l'effort de pêche.
         \begin{center}
             \includegraphics[width=8cm]{figures/convergence_3d_point_equilibre.png}
             \captionof{figure}{Convergence vers le point d'équilibre}

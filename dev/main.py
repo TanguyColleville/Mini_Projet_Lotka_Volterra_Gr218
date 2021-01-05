@@ -6,24 +6,24 @@ import scipy.integrate as spi
 # from mpl_toolkits import mplot3d
 
 # valeurs initiales
-u0=1.1
-v0=0.1
-w0=0.16
+u0=1.1 # densité proies
+v0=0.1 # densité prédateurs
+w0=0.16 # l'effort utilisé pour récolter la population
 
 #valeurs des paramètres du modèle
-b1 = 0.01 # représente 
-k1 = 0.9 # représente 
-k2 = 0.05 # représente 
-a2 = 0.7 # représente 
+b1 = 0.01 # représente la mortalité dûe à la compétition à la compétition entre les proies
+k1 = 0.9 # représente mesure la protection dont la proie bénéficie grâce à l'environnement
+k2 = 0.05 # représente mesure la protection dont les prédateurs bénéficie grâce à l'environnement
+a2 = 0.7 # représente la valeur maximale que le taux de réduction par individu prédateur peut prendre
 c1 = 0.06 # représente 
 c2 = 0.8 # représente 
-a1 = 0.5 # représente 
-q = 0.09 # représente 
-lmda = 0.5 # lambda
-p = 0.5 # représente 
-c = 0.7 # représente 
+a1 = 0.5 # représente la valeur maximale que le taux de réduction par individu proie peut prendre
+q = 0.09 # représente le coefficient de capture de pêche 
+lmda = 0.5 # représente le paramètre de la rigidité qui mesure la répartition de l’effort de la réaction
+p = 0.5 # représente  le prix constant par unité de biomasse des poissons débarqués
+c = 0.7 # représente le coût de la pêche 
 delta  = 0.03 # représente 
-m=0.9262 # représente 
+m=0.9262 # représente la fraction de stock disponible pour la récolte
 
 ## Calcul des points d'équilibres
 
@@ -76,6 +76,8 @@ for i in range(len(LT)-1):
 
 
 ########################################### Visualisation ##########################################
+
+# Représentation de la solution en 3D pour Scipy 
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.plot3D(solU, solV, solW, 'red')
@@ -83,7 +85,7 @@ plt.xlabel("Sardines")
 plt.ylabel("Requins")
 plt.title("Ligne de convergence Scipy")
 plt.show()
-
+# Représentation de la solution (Scipy) en 2D x représente le temps
 plt.figure()
 plt.plot(LT,solU,label="Population Sardine",color="blue")
 plt.plot(LT,solV,label="Population Requin",color="r")
@@ -96,7 +98,7 @@ plt.legend()
 plt.show()
 
 
-
+# Représentation de la solution (Euler) en 2D x représente le temps
 plt.figure()
 plt.plot(LT,u_euler,label="Sardines euler")
 plt.plot(LT,v_euler,label="Requins euler")
@@ -107,7 +109,7 @@ plt.plot(LT,[w_eq]*N,label="W equi")
 plt.legend()
 plt.title("Résolution avec Euler")
 plt.show()
-
+# Représentation de la supperposition des solutions issues de Scipy et Euler en 2D 
 plt.figure()
 plt.plot(LT,u_euler,label="Sardines euler")
 plt.plot(LT,v_euler,label="Requins euler")
@@ -118,33 +120,34 @@ plt.plot(LT,solW,label="Efforts de pêche scipy")
 plt.legend()
 plt.title("Euler VS Scipy ")
 plt.show()
-
+#Représentation de l'évolution de la population de requins en fonction de la population de sardine(Euler)
 plt.figure()
 plt.plot(u_euler,v_euler,label="Sardines et Requins")
 plt.legend()
 plt.title("Sardines et requins ")
 plt.show()
 
-
+## Portrait de phase pour les sardines avec les résultats issus d'Euler
 plt.figure()
 plt.plot(u_euler,u_prim_euler,label="Portrait phase sardines")
 plt.legend()
 plt.title("Portrait de phase pour u, population de sardines")
 plt.show()
 
+## Portrait de phase pour les requins avec les résultats issus d'Euler
 plt.figure()
 plt.plot(v_euler,v_prim_euler,label="Portrait phase requins")
 plt.legend()
 plt.title("Portrait de phase pour v, population de requin")
 plt.show()
-
+## Portrait de phase pour l'effort de pêche avec les résultats issus d'Euler
 plt.figure()
 plt.plot(w_euler,w_prim_euler,label="Portrait phase intensité de pêche")
 plt.legend()
 plt.title("Portrait de phase pour w, intensité de la pêche")
 plt.show()
 
-
+## Représentation de la convergence vers un point d'équilibre # Schéma d'euler
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.plot3D(u_euler, v_euler, w_euler, 'red')
