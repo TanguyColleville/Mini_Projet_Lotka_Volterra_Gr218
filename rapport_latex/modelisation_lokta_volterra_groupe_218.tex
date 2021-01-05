@@ -213,7 +213,8 @@
 
         % Courbes  : 3 portraits de phase 2d + ligne 3D u,v,w 
         \subsection{Portrait de phase des grandeurs $u,v,w$}
-        Le graphique d'évolution de la population de requins, de la population de sardines et de l'effort de pêche est donné ci dessous. On remarque la convergence vers le point d'équilibre.
+        Le graphique d'évolution de la population de requins, de la population de sardines et de l'effort de pêche est donné ci dessous.
+         On remarque la convergence vers le point d'équilibre.
         \begin{center}
             \includegraphics[width=8cm]{figures/convergence_3d_point_equilibre.png}
             \captionof{figure}{Convergence vers le point d'équilibre}
@@ -243,7 +244,7 @@
         % comparasion à nos attentes dans la vie réelle --> regarder les sardines disparaissent mer adriatique
         \subsection{Conclusion}
         On peut voir que notre modèle est juste, en effet on retrouve les résultats mis en exergue 
-        dans les papiers de recherche à propos de ce sujet.\cite{} On remarque également que nos modèles
+        dans les papiers de recherche à propos de ce sujet. On remarque également que nos modèles
         sont convergents, i.e. stable et consistant. De plus on remarque que la méthode de résolution avec
         scipy vient corroborer les résultats obtenus via la méthode d'euler explicite. Enfin, ces deux modèles
         permettent de vérifier nos intuitions quant aux dynamiques de population avec des cas particuliers,
@@ -262,9 +263,9 @@
             \captionof{figure}{Réseau de Pétri du système}
         \end{center}
 
-        Ce réseau permet via un compteur de comptabilisé le paramètre $a_1$ et $a_2$ qui représente le taux de
-        natalité de chaque population. Il permet également via le même système de compteur de modéliser 
-        l'effort de pêche. Aussi, la compétition entre individu définie par les variablesX X  et pris en
+        Ce réseau permet via un compteur de comptabilisé les paramètres $R_s$ et $R_r$  qui représentent les taux de
+        reproduction des populations de sardines et de requins et $E_p$ qui permet de tenir compte del'effort de pêche . Il permet également via le même système de compteur de modéliser 
+        l'effort de pêche. Aussi, la compétition entre individu définie par les variables $b_1$ et $b_2$ et pris en
         compte avec les puits qui symbolysent la mort d'un individu. 
     \section{Conclusion}
     Nous avons pu voir au terme de ce projet, les enjeux de la modélisation d'un phénomène complexe. En effet, 
@@ -276,5 +277,5 @@
     sur le sujet et dans la mesure où ils viennent corrober nos intuitions concernant la dynamique des populations.
     \nocite{*}
     \bibliographystyle{plain}
-    \bibliography{biblio}% il faut un ifchier .bib
+    \bibliography{biblio}% il faut un fichier .bib
 \end{document}
