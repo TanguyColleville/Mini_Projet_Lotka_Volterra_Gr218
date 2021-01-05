@@ -44,7 +44,7 @@ Vous pouvez à présent jouir de la liberté d'ajuster les différents paramètr
 Attention, pour simuler l'abscence de sardine au début il ne suffit pas de mettre la population initiale à 0 d'autres paramètres sont à régler conformément aux explications données en annexe.
 
 # Conclusion 
-On peut dire que nos résultats en termes d'analyse temporelle corresponde à nos attendes. La littérature nous également permis de déterminer les valeurs des paramètres dans le système de Lotka Volterra afin de modéliser l'évolution des populations de sardines et de requins dans la mer Adriatique. Plus de détail dans notre rapport PDF. 
+On peut dire que nos résultats en termes d'analyse temporelle corresponde à nos attentes. La littérature nous également permis de déterminer les valeurs des paramètres dans le système de Lotka Volterra afin de modéliser l'évolution des populations de sardines et de requins dans la mer Adriatique. Plus de détail dans notre rapport PDF. 
 
 # Références
 https://www.scipy.org/
@@ -52,4 +52,7 @@ https://numpy.org/
 http://ipython.org/
 https://matplotlib.org/
 http://www.banquept.fr/documents/2014/MementoPythonScilab.pdf
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html
+https://docs.scipy.org/doc/scipy/reference/tutorial/integrate.html
+
 
