@@ -127,7 +127,7 @@
     \section{Modélisation à état continu}
         \subsection{Mise en équation du modèle Lotka Volterra}
         % description équation formulation du problème de Cauchy + Schéma d'Euler avec convergence du modèle prouvé 
-        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps. Les différents parmètres sont décrits dans le documents support \cite{} [!!! mettre ref !!!]\\
+        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps. Les différents parmètres sont décrits dans le documents support \\
         Ces grandeurs vérifient le système d'équations différentielles non linéaires suivant : 
         \begin{center}
         $ \left\{
@@ -190,7 +190,7 @@
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
         \subsection{Évolution des grandeurs en fonction du temps}
         Une solution approchée du systèmes d'équations différentielles a été déterminée à partir du module python Scipy et à partir d'un schéma d'Euler explicite. L'évolution des population de requins, de sardines et de l'effort de pêche est tracé ci-dessous.
-        On remarque que les solutions Scipy et Euler explicite convergent bien vers les valeurs d'équilibre.
+        On remarque que les solutions Scipy et Euler explicite convergent bien vers les valeurs d'équilibre : proportion de sardines de \textbf{16.8}, proportion de requins de \textbf{14.75} et un effort de peche de \textbf{3.4}.
         \begin{figure}[!h]
     		\begin{minipage}[b]{.4\textwidth}
         		\centering
@@ -259,7 +259,7 @@
         le modèle de Lotka-Volterra en temps discret avec le réseau de Pétri ci-dessous. 
 
         \begin{center}
-            \includegraphics[width=8cm]{figures/reseau_petri.png}
+            \includegraphics[width=15cm]{figures/reseau_petri.png}
             \captionof{figure}{Réseau de Pétri du système}
         \end{center}
 
