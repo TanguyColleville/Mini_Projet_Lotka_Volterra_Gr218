@@ -117,7 +117,7 @@
     \section{Introduction}
         L'objectif de ce projet de modélisation est de proposer une simulation de l'évolution des populations,  
         d'un couple proie prédateur dans un écosystème, par le biais des équations de Lotka Volterra. Dans un premier temps,
-        Nous étudierons et développerons  le modèle à temps continu pour ensuite nous intéresser à la modélisation
+        nous étudierons et développerons  le modèle à temps continu pour ensuite nous intéresser à la modélisation
         en temps discret. Nous nous intéresserons à l'évolution des populations de sardines et de requins
         dans la mer Adriatique. Ce type d'étude peut aider des états à prendre des mesures politiques environnementales 
         et commerciales afin de préserver les écosystèmes des impacts de l'activité humaine, telle que la pêche intensive
@@ -188,7 +188,8 @@
         
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
         \subsection{Évolution des grandeurs en fonction du temps}
-        Ci-dessous est tracée l'évolution de la population de requins, de la population de sardines et de l'effort de pêche. 
+        Ci-dessous est tracée l'évolution de la population de requins, de la population de sardines et de l'effort de pêche. Ces graphiques
+        sont issus de notre programme python "main.py", plus de détails disponibles dans le readme. 
         \begin{figure}[!h]
     		\begin{minipage}[b]{.4\textwidth}
         		\centering
@@ -209,6 +210,7 @@
             \captionof{figure}{Comparaison des méthodes de résolution avec Euler explicite et Scipy}
         \end{center}
         On remarque ainsi la cohérence des modèles euler explicite et scipy.odeint qui repose sur lsoda issue d'une librairie FORTRAN.
+        De plus, on peut noter que, conformément à ce qu'on s'attendait, on atteint un équilibre lorsque l'effort de pêche est modéré. 
         % Courbes  : 3 portraits de phase 2d + ligne 3D u,v,w 
         \subsection{Portrait de phase des grandeurs $u,v,w$}
         Le graphique d'évolution de la population de requins, de la population de sardines et de l'effort de pêche est donné ci-dessous.
@@ -243,7 +245,7 @@
         \subsection{Conclusion}
         On peut voir que notre modèle est juste, en effet on retrouve les résultats mis en exergue 
         dans les papiers de recherche à propos de ce sujet. On remarque également que nos modèles
-        sont convergents, i.e. stable et consistant. De plus on remarque que la méthode de résolution avec
+        sont convergents, i.e. stable et consistant. De plus, on remarque que la méthode de résolution avec
         scipy vient corroborer les résultats obtenus via la méthode d'euler explicite. Enfin, ces deux modèles
         permettent de vérifier nos intuitions quant aux dynamiques de population avec des cas particuliers,
         comme l'abscence de pêche qui induit un état d'équilibre plus haut pour la population de sardine. 
@@ -262,9 +264,9 @@
         \end{center}
 
         Ce réseau permet via un compteur de comptabilisé les paramètres $R_s$ et $R_r$  qui représentent les taux de
-        reproduction des populations de sardines et de requins et $E_p$ qui permet de tenir compte del'effort de pêche . Il permet également via le même système de compteur de modéliser 
+        reproduction des populations de sardines et de requins et $E_p$ qui permet de tenir compte de l'effort de pêche . Il permet également via le même système de compteur de modéliser 
         l'effort de pêche. Aussi, la compétition entre individu définie par les variables $b_1$ et $b_2$ et pris en
-        compte avec les puits qui symbolysent la mort d'un individu.
+        compte avec les puits qui symbolisent la mort d'un individu.
     \section{Conclusion}
     Nous avons pu voir au terme de ce projet, les enjeux de la modélisation d'un phénomène complexe. En effet, 
     la prise d'initiative et d'hypothèses ont été primordiales afin de mener à bien notre projet de modélisation 
