@@ -127,7 +127,7 @@
     \section{Modélisation à état continu}
         \subsection{Mise en équation du modèle Lotka Volterra}
         % description équation formulation du problème de Cauchy + Schéma d'Euler avec convergence du modèle prouvé 
-        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps. Les différents parmètres sont décrits dans le documents support \cite{} [!!! mettre ref !!!]\\
+        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps. Les différents parmètres sont décrits dans le documents support.\\
         Ces grandeurs vérifient le système d'équations différentielles non linéaires suivant : 
         \begin{center}
         $ \left\{
@@ -184,12 +184,12 @@
                 \overline{u} = \dfrac{c}{pmq}
             \end{array}
         \right.$
-        à condition que les conditions énoncées dans le lemme 4.1 du document support \cite{} [!!!! mettre la ref !!!!] soient respectées.
+        à condition que les conditions énoncées dans le lemme 4.1 du document support soient respectées.
         
         
         %Courbes : Comparaison Scipy / Euler avec 3 courbes et val eq 
         \subsection{Évolution des grandeurs en fonction du temps}
-        
+        Ci-dessous est tracé l'évoultion de la population de requins, de la population de sardines et de l'effort de pêche. 
         \begin{figure}[!h]
     		\begin{minipage}[b]{.4\textwidth}
         		\centering
@@ -212,6 +212,8 @@
 
         % Courbes  : 3 portraits de phase 2d + ligne 3D u,v,w 
         \subsection{Portrait de phase des grandeurs $u,v,w$}
+        Le graphique d'évolution de la population de requins, de la population de sardines et de l'effort de pêche est donné ci dessous.
+        On remarque la convergence vers le point d'équilibre.
         \begin{center}
             \includegraphics[width=8cm]{figures/convergence_3d_point_equilibre.png}
             \captionof{figure}{Convergence vers le point d'équilibre}
@@ -241,7 +243,7 @@
         % comparasion à nos attentes dans la vie réelle --> regarder les sardines disparaissent mer adriatique
         \subsection{Conclusion}
         On peut voir que notre modèle est juste, en effet on retrouve les résultats mis en exergue 
-        dans les papiers de recherche à propos de ce sujet.\cite{} On remarque également que nos modèles
+        dans les papiers de recherche à propos de ce sujet. On remarque également que nos modèles
         sont convergents, i.e. stable et consistant. De plus on remarque que la méthode de résolution avec
         scipy vient corroborer les résultats obtenus via la méthode d'euler explicite. Enfin, ces deux modèles
         permettent de vérifier nos intuitions quant aux dynamiques de population avec des cas particuliers,
@@ -256,14 +258,14 @@
         le modèle de Lotka-Volterra en temps discret avec le réseau de Pétri ci-dessous. 
 
         \begin{center}
-            \includegraphics[width=8cm]{figures/reseau_petri.png}
+            \includegraphics[width=14cm]{figures/reseau_petri.png}
             \captionof{figure}{Réseau de Pétri du système}
         \end{center}
 
-        Ce réseau permet via un compteur de comptabilisé le paramètre $a_1$ et $a_2$ qui représente le taux de
-        natalité de chaque population. Il permet également via le même système de compteur de modéliser 
-        l'effort de pêche. Aussi, la compétition entre individu définie par les variablesX X  et pris en
-        compte avec les puits qui symbolysent la mort d'un individu. 
+        Ce réseau permet via un compteur de comptabilisé les paramètres $R_s$ et $R_r$  qui représentent les taux de
+        reproduction des populations de sardines et de requins et $E_p$ qui permet de tenir compte del'effort de pêche . Il permet également via le même système de compteur de modéliser 
+        l'effort de pêche. Aussi, la compétition entre individu définie par les variables $b_1$ et $b_2$ et pris en
+        compte avec les puits qui symbolysent la mort d'un individu.
     \section{Conclusion}
     Nous avons pu voir au terme de ce projet, les enjeux de la modélisation d'un phénomène complexe. En effet, 
     la prise d'initiative et d'hypothèses ont été primordiales afin de mener à bien notre projet de modélisation 

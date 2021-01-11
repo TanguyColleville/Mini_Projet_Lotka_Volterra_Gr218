@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.3)  5 JAN 2021 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.12.3)  11 JAN 2021 12:57
 entering extended mode
 **d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/modelisation_lokta_volterra_groupe_218.tex
 (d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/modelisation_lokta_volterra_groupe_218.tex
@@ -615,26 +615,26 @@ Overfull \hbox (73.9157pt too wide) in paragraph at lines 156--188
 <figures/Scipy_good_conditions.png, id=114, 462.528pt x 346.896pt>
 File: figures/Scipy_good_conditions.png Graphic file (type png)
 <use figures/Scipy_good_conditions.png>
-Package pdftex.def Info: figures/Scipy_good_conditions.png  used on input line 197.
+Package pdftex.def Info: figures/Scipy_good_conditions.png  used on input line 196.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (23.90306pt too wide) in paragraph at lines 197--198
+Overfull \hbox (23.90306pt too wide) in paragraph at lines 196--197
  [][] 
  []
 
 <figures/Euler_good_conditions.png, id=115, 462.528pt x 346.896pt>
 File: figures/Euler_good_conditions.png Graphic file (type png)
 <use figures/Euler_good_conditions.png>
-Package pdftex.def Info: figures/Euler_good_conditions.png  used on input line 203.
+Package pdftex.def Info: figures/Euler_good_conditions.png  used on input line 202.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (23.90306pt too wide) in paragraph at lines 203--204
+Overfull \hbox (23.90306pt too wide) in paragraph at lines 202--203
  [][] 
  []
 
 File: images/cs.png Graphic file (type png)
 <use images/cs.png>
-Package pdftex.def Info: images/cs.png  used on input line 208.
+Package pdftex.def Info: images/cs.png  used on input line 207.
 (pdftex.def)             Requested size: 54.88019pt x 28.45274pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -646,68 +646,68 @@ This may cause the page layout to be inconsistent, however.
 <figures/Euler_VS_Scipy_good_conditions.png, id=125, 462.528pt x 346.896pt>
 File: figures/Euler_VS_Scipy_good_conditions.png Graphic file (type png)
 <use figures/Euler_VS_Scipy_good_conditions.png>
-Package pdftex.def Info: figures/Euler_VS_Scipy_good_conditions.png  used on input line 210.
+Package pdftex.def Info: figures/Euler_VS_Scipy_good_conditions.png  used on input line 209.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 211.
+(caption)                particular \caption on input line 210.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 215.
+(Font)              <12> on input line 214.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 215.
+(hyperref)                removing `math shift' on input line 214.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 215.
+(hyperref)                removing `math shift' on input line 214.
 
 <figures/convergence_3d_point_equilibre.png, id=126, 462.528pt x 346.896pt>
 File: figures/convergence_3d_point_equilibre.png Graphic file (type png)
 <use figures/convergence_3d_point_equilibre.png>
-Package pdftex.def Info: figures/convergence_3d_point_equilibre.png  used on input line 219.
+Package pdftex.def Info: figures/convergence_3d_point_equilibre.png  used on input line 218.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 220.
+(caption)                particular \caption on input line 219.
 See the caption package documentation for explanation.
 
 File: images/cs.png Graphic file (type png)
 <use images/cs.png>
-Package pdftex.def Info: images/cs.png  used on input line 220.
+Package pdftex.def Info: images/cs.png  used on input line 219.
 (pdftex.def)             Requested size: 54.88019pt x 28.45274pt.
 [4 <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Scipy_good_conditions.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Euler_good_conditions.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Euler_VS_Scipy_good_conditions.png>]
 <figures/Portrait_de_phase_peche.png, id=135, 462.528pt x 346.896pt>
 File: figures/Portrait_de_phase_peche.png Graphic file (type png)
 <use figures/Portrait_de_phase_peche.png>
-Package pdftex.def Info: figures/Portrait_de_phase_peche.png  used on input line 226.
+Package pdftex.def Info: figures/Portrait_de_phase_peche.png  used on input line 225.
 (pdftex.def)             Requested size: 131.45302pt x 98.59113pt.
 <figures/Portrait_de_phase_requins.png, id=136, 462.528pt x 346.896pt>
 File: figures/Portrait_de_phase_requins.png Graphic file (type png)
 <use figures/Portrait_de_phase_requins.png>
-Package pdftex.def Info: figures/Portrait_de_phase_requins.png  used on input line 231.
+Package pdftex.def Info: figures/Portrait_de_phase_requins.png  used on input line 230.
 (pdftex.def)             Requested size: 131.45302pt x 98.59113pt.
 <figures/Portrait_de_phase_sardine.png, id=137, 462.528pt x 346.896pt>
 File: figures/Portrait_de_phase_sardine.png Graphic file (type png)
 <use figures/Portrait_de_phase_sardine.png>
-Package pdftex.def Info: figures/Portrait_de_phase_sardine.png  used on input line 237.
+Package pdftex.def Info: figures/Portrait_de_phase_sardine.png  used on input line 236.
 (pdftex.def)             Requested size: 131.45302pt x 98.59113pt.
 <figures/reseau_petri.png, id=138, 494.8086pt x 274.1442pt>
 File: figures/reseau_petri.png Graphic file (type png)
 <use figures/reseau_petri.png>
-Package pdftex.def Info: figures/reseau_petri.png  used on input line 262.
-(pdftex.def)             Requested size: 426.79134pt x 236.47052pt.
+Package pdftex.def Info: figures/reseau_petri.png  used on input line 261.
+(pdftex.def)             Requested size: 398.33858pt x 220.70442pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 263.
+(caption)                particular \caption on input line 262.
 See the caption package documentation for explanation.
 
 File: images/cs.png Graphic file (type png)
 <use images/cs.png>
-Package pdftex.def Info: images/cs.png  used on input line 263.
+Package pdftex.def Info: images/cs.png  used on input line 262.
 (pdftex.def)             Requested size: 54.88019pt x 28.45274pt.
 [5 <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/convergence_3d_point_equilibre.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Portrait_de_phase_peche.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Portrait_de_phase_requins.png> <d:/Documents/COURS/CentraleSupelec/Modelisation/mini_projet_lokta_volterra/Mini_Projet_Lotka_Volterra_Gr218/rapport_latex/figures/Portrait_de_phase_sardine.png>] (d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.bbl
 File: images/cs.png Graphic file (type png)
@@ -733,7 +733,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  70i,16n,77p,539b,562s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Antoine/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.pdf (8 pages, 527121 bytes).
+Output written on d:/Documents\COURS\CentraleSupelec\Modelisation\mini_projet_lokta_volterra\Mini_Projet_Lotka_Volterra_Gr218\rapport_latex\modelisation_lokta_volterra_groupe_218.pdf (8 pages, 525715 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)
