@@ -122,13 +122,14 @@
         dans la mer Adriatique. Ce type d'étude peut aider des états à prendre des mesures politiques environnementales 
         et commerciales afin de préserver les écosystèmes des impacts de l'activité humaine, telle que la pêche intensive
         qui menace certaines espèces. 
-        \textit{projet hebergé sur github : https://github.com/TanguyColleville/Mini_Projet_Lotka_Volterra_Gr218}
+        
+        \textit{Projet hebergé sur github} : \url{https://github.com/TanguyColleville/Mini_Projet_Lotka_Volterra_Gr218}
 
     \section{Modélisation à état continu}
         \subsection{Mise en équation du modèle Lotka Volterra}
         % description équation formulation du problème de Cauchy + Schéma d'Euler avec convergence du modèle prouvé 
-        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps. Les différents parmètres sont décrits dans le documents support.\\
-        Ces grandeurs vérifient le système d'équations différentielles non linéaires suivant : 
+        On note $u$ la densité de proies et $v$ la densité de prédateurs. On note ensuite $w$ l'effort de pêche. On cherche à connaître en l'évolution de ces trois grandeurs au cours du temps. Les différents paramètres sont décrits dans le documents support.\\
+        Ces grandeurs vérifient le système d'équations différentielles non linéaires et invariantes par rapport au temps suivant : 
         \begin{center}
         $ \left\{
             \begin{array}{ll}
@@ -244,13 +245,13 @@
 
         % comparasion à nos attentes dans la vie réelle --> regarder les sardines disparaissent mer adriatique
         \subsection{Conclusion}
-        On peut voir que notre modèle est juste, en effet on retrouve les résultats mis en exergue 
+        On peut voir que notre modèle semble correcte. En effet on retrouve les résultats mis en exergue 
         dans les papiers de recherche à propos de ce sujet. On remarque également que nos modèles
-        sont convergents, i.e. stable et consistant. De plus, on remarque que la méthode de résolution avec
+        sont convergents, i.e. stable et consistant. De plus, la méthode de résolution avec
         scipy vient corroborer les résultats obtenus via la méthode d'euler explicite. Enfin, ces deux modèles
         permettent de vérifier nos intuitions quant aux dynamiques de population avec des cas particuliers,
         comme l'abscence de pêche qui induit un état d'équilibre plus haut pour la population de sardine. 
-        Cependant les cas de ce genre ne sont pas exposés dans ce rapport par soucis de concision. 
+        Cependant les cas de ce genre ne sont pas exposés dans ce rapport par souci de concision. 
         %\subsection{Cas particulier du système sans prédateur}
 
     \section{Modélisation à événements discrets}
@@ -267,14 +268,14 @@
         Ce réseau permet via un compteur de comptabilisé les paramètres $R_s$ et $R_r$  qui représentent les taux de
         reproduction des populations de sardines et de requins et $E_p$ qui permet de tenir compte de l'effort de pêche . Il permet également via le même système de compteur de modéliser 
         l'effort de pêche. Aussi, la compétition entre individu définie par les variables $b_1$ et $b_2$ et pris en
-        compte avec les puits qui symbolisent la mort d'un individu.
+        compte avec les puits qui symbolisent la mort d'un individu. Les jetons initiaux sont ajoutés conformément aux conditions initiales désirées dans les places $R_s$ pour les sardines et $R_r$ pour les requins.
     \section{Conclusion}
     Nous avons pu voir au terme de ce projet, les enjeux de la modélisation d'un phénomène complexe. En effet, 
     la prise d'initiative et d'hypothèses ont été primordiales afin de mener à bien notre projet de modélisation 
     de l'évolution des populations de sardines exposées à la pêche et à la chasse des requins en mer adriatique. 
     Par ailleurs, nous avons pu voir, par le biais de différentes modélisations, que les hypothèses changeaient
     en passant du temps discret au temps continu. Enfin nous pouvons affirmer que les résultats sont satisfaisants
-    dans la mesure où ses derniers correspondent aux résultats mis en exergue dans les rapports de recherches emis 
+    dans la mesure où ces derniers correspondent aux résultats mis en exergue dans les rapports de recherches émis 
     sur le sujet et dans la mesure où ils viennent corrober nos intuitions concernant la dynamique des populations.
     \nocite{*}
     \bibliographystyle{plain}

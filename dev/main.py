@@ -15,15 +15,17 @@ b1 = 0.01 # représente la mortalité dûe à la compétition à la compétition
 k1 = 0.9 # représente mesure la protection dont la proie bénéficie grâce à l'environnement
 k2 = 0.05 # représente mesure la protection dont les prédateurs bénéficie grâce à l'environnement
 a2 = 0.7 # représente la valeur maximale que le taux de réduction par individu prédateur peut prendre
-c1 = 0.06 # représente 
-c2 = 0.8 # représente 
 a1 = 0.5 # représente la valeur maximale que le taux de réduction par individu proie peut prendre
 q = 0.09 # représente le coefficient de capture de pêche 
 lmda = 0.5 # représente le paramètre de la rigidité qui mesure la répartition de l’effort de la réaction
 p = 0.5 # représente  le prix constant par unité de biomasse des poissons débarqués
 c = 0.7 # représente le coût de la pêche 
-delta  = 0.03 # représente 
 m=0.9262 # représente la fraction de stock disponible pour la récolte
+# Les trois paramètres suivants sont liés à la pêche
+delta  = 0.03 
+c1 = 0.06 
+c2 = 0.8 
+
 
 ## Calcul des points d'équilibres
 
