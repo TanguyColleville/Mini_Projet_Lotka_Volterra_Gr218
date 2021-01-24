@@ -35,7 +35,7 @@ cd [NOM VENV] puis Scripts\Activate.bat
 
 En demeurant dans [NOM VENV] taper pip install -r requirements.txt
 
-Vous êtes à présent de en mesure d'utiliser notre modèle.
+Vous êtes à présent en mesure d'utiliser notre modèle.
 # Le programme 
 
 Ouvrir le programme et le lancer en veillant à sélectionner votre environnement virtuel comme interpreteur. 
